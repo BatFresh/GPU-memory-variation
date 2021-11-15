@@ -23,7 +23,7 @@
 
 import jetson.inference
 import jetson.utils
-
+from datetime import datetime
 import argparse
 
 
@@ -40,8 +40,12 @@ img = jetson.utils.loadImage(opt.filename)
 net = jetson.inference.imageNet(opt.network)
 
 # classify the image
+start_time = datetime.now()
 class_idx, confidence = net.Classify(img)
+end_time = datetime.now()
 
+print("The inference task completion time(s):")
+print((end_time-start_time).seconds)
 # find the object description
 class_desc = net.GetClassDesc(class_idx)
 

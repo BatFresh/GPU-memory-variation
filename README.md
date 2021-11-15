@@ -6,7 +6,10 @@ Jetson TX2 8GB version
 ## TensorRT Inference Engine:
 jetson-inference  ->  https://github.com/dusty-nv/jetson-inference.git
 ## GPU Monitoring
-jeston-status
+jeston-stats
+'''
+sudo -H pip3 install jeston-stats
+'''
 ## Pytorch
 torch==1.7.0
 torchvision==0.8.1

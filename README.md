@@ -1,6 +1,6 @@
 # GPU-memory-variation
 GPU memory variation for the influence of the co-training-inference 
-# Environment
+# Test equipment
 Jetson TX2 8GB version
 # Dependency
 ## TensorRT Inference Engine:
